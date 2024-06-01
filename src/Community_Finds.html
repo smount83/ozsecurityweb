@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OzSecurity</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center header-inner">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <!-- <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#MacOs_InfoStealer">MacOs InfoStealer</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+          <li><a class="nav-link scrollto" href="#hotels">Hotels</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li> -->
+          <li class="dropdown"><a href="#"><span>Finds</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#MacOsInfostealer">MacOS Infostealer</a></li>
+            <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li> -->
+            <!-- <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li> -->
+          </ul>
+        </li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <!-- <a class="buy-tickets scrollto" href="https://bit.ly/4bEh5bQ">Register</a> -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="main-page">
+
+    <!-- ======= Community Finds ======= -->
+    <section id="MacOsInfostealer">
+      <div class="container">
+        <div class="section-header">
+          <h2>Community Finds</h2>
+
+        </div>
+
+
+          <h1>MacOS: Not Invincible to Info Stealers</h1>
+          <p>Many users believe macOS to be unbreachable, but recent discoveries paint a different picture. Malicious actors are targeting macOS with information-stealing malware (infostealers).</p>
+          
+          <h2>The Threat Landscape</h2>
+          <p>Infostealers can infiltrate your system through deceptive means, like:</p>
+          <ul>
+              <li><strong>Malicious Ads:</strong> Clicking on a harmful ad can unknowingly download malware.</li>
+              <li><strong>Pirated Software:</strong> Downloading software from untrusted sources is a high-risk practice.</li>
+          </ul>
+          <p>These vulnerabilities mirror common Windows infection vectors.</p>
+          
+          <h2>A Case Study: The Amos/Atomic Stealer</h2>
+          <p>This specific info stealer is a prime example:</p>
+          <ul>
+              <li><strong>Leverages osascript:</strong> Similar to how Windows malware might abuse Powershell or wscript, the Amos/Atomic stealer misuses osascript for malicious purposes.</li>
+          </ul>
+          <p>Here's a breakdown of the stealer's steps (technical details omitted for brevity):</p>
+          <ol>
+              <li><strong>Hides its activity:</strong> The malware operates in stealth mode by hiding its application window.</li>
+              <li><strong>Gathers system information:</strong> It collects details about your macOS version, hardware, and displays.</li>
+              <li><strong>Attempts to steal credentials:</strong> It displays a fake "System Preferences" prompt, tricking you into entering your password.</li>
+              <li><strong>Scans for installed applications:</strong> It creates a list of all the programs on your device.</li>
+              <li><strong>Grabs specific files:</strong> It targets files like browser cookies, notes, and documents of specific formats (text files, Word documents, etc.) under a certain size limit.</li>
+              <li><strong>Compresses and removes evidence:</strong> The malware creates an archive of the stolen data and then deletes the temporary folder and archive itself to avoid detection.</li>
+          </ol>
+          
+          <h2>New Tactics: Signed Installers</h2>
+          <p>While the Amos/Atomic stealer relied on deceptive methods, newer threats are emerging:</p>
+          <ul>
+              <li><strong>Signed Installers:</strong> Some malware can appear as legitimate, signed installers, making them even more deceptive.</li>
+          </ul>
+          
+          <h2>Identifying Mac Malware</h2>
+          <p>Here's how you can be vigilant against these threats:</p>
+          <ul>
+              <li><strong>Be cautious with online interactions:</strong> Avoid clicking on suspicious ads and downloading software from untrusted sources.</li>
+              <li><strong>Look for red flags:</strong> Be wary of unexpected prompts asking for your password, especially those disguised as system settings.</li>
+              <li><strong>Consider security software:</strong> Security software with real-time monitoring can help detect suspicious activity.</li>
+          </ul>
+          
+          <h2>Conclusion</h2>
+          <p>While macOS offers a robust security foundation, it's not foolproof. Staying informed about evolving threats and practicing safe online habits are crucial for protecting your Mac.</p>
+          
+          <p><strong>Happy and Secure Hunting!</strong></p>
+
+      
+        </div>
+          <!-- <p><hr></p>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="assets/img/speakers/Tom.Ensz.jpg" alt="Synthanee Humbert" class="img-fluid">
+            </div>
+            
+            <div class="col-md-6">
+              <div class="details">
+                <h2>Thomas Ensz</h2>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/thomas-ensz-1518a522b/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <p>Tom Ensz is an Engineering Educator in the School of Computing at Wichita State University, where he teaches several courses including cyber operations and digital forensics. </p>
+                <p>Before joining WSU, Tom served 23 years as an FBI Special Agent investigating a wide range of crimes including cyber crime, drug trafficking, and international terrorism. </p>
+                <p>He also served as Police Officer in the City of Overland, KS, and as Border Patrol Agent in Ft. Hancock, TX. He holds a BS degree in Psychology from Kansas State University and thirteen (!) GIAC certifications primarily in digital forensics.</p>
+              </div>
+            </div>
+          <p><hr></p>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="assets/img/speakers/AlexKarkins0.png" alt="Synthanee Humbert" class="img-fluid">
+            </div>
+            
+            <div class="col-md-6">
+              <div class="details">
+                <h2>Alex Karkins</h2>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/alex-karkins-8208b710/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <p>Alex Karkins brings over 10 years of IT security expertise to the table, currently spearheading Endpoint Threat Hunting at Talos, Cisco. </p>
+                <p>His proven ability to identify and neutralize sophisticated threats is evident through his mastery of host and network forensics, EDR/NGAV, intrusion detection, and incident response.</p>
+              </div>
+            </div>
+            
+            <p><hr></p>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="assets/img/speakers/Silhoette.png" alt="Synthanee Humbert" class="img-fluid">
+            </div>
+            
+            <div class="col-md-6">
+              <div class="details">
+                <h2>Eric Lee</h2>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/ericblee6/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <p>Tom Ensz is an Engineering Educator in the School of Computing at Wichita State University, where he teaches several courses including cyber operations and digital forensics. </p>
+                <p>Before joining WSU, Tom served 23 years as an FBI Special Agent investigating a wide range of crimes including cyber crime, drug trafficking, and international terrorism. </p>
+                <p>He also served as Police Officer in the City of Overland, KS, and as Border Patrol Agent in Ft. Hancock, TX. He holds a BS degree in Psychology from Kansas State University and thirteen (!) GIAC certifications primarily in digital forensics.</p>
+              </div>
+            </div>
+            <p><hr></p> 
+          <div class="row">
+            <div class="col-md-2">
+              <img src="assets/img/speakers/Silhoettk2.png" alt="Synthanee Humbert" class="img-fluid">
+            </div>
+            
+            <div class="col-md-6">
+              <div class="details">
+                <h2>Jason Henry</h2>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/jason-henry-837884163/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                 <p>Tom Ensz is an Engineering Educator in the School of Computing at Wichita State University, where he teaches several courses including cyber operations and digital forensics. </p>
+                <p>Before joining WSU, Tom served 23 years as an FBI Special Agent investigating a wide range of crimes including cyber crime, drug trafficking, and international terrorism. </p>
+                <p>He also served as Police Officer in the City of Overland, KS, and as Border Patrol Agent in Ft. Hancock, TX. He holds a BS degree in Psychology from Kansas State University and thirteen (!) GIAC certifications primarily in digital forensics.</p>
+              </div>
+            </div>
+        </div>-->
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <!-- <div class="col-lg-4 col-md-6 footer-info">
+            <img src="assets/img/logo.png" alt="TheEvenet">
+            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          </div> -->
+
+          <div class="col-lg-6 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://bit.ly/4bEh5bQ">Register</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Phone:</strong> +1 316-749-8265<br>
+              <strong>Email:</strong> info@ozsecurity.org<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/OzSecICT" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/oz.sec.12" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ozsecict/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/ozsec-conference-41294a215/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>OzSecurity Foundation</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
