@@ -192,7 +192,7 @@ h6 {
 .buy-tickets {
   color: #fff;
   background: #0cbd19;
-  padding: 7px 22px;
+  padding: 5px 5px;
   margin: 0 0 0 15px;
   border-radius: 50px;
   border: 2px solid #0cbd19;
@@ -201,6 +201,7 @@ h6 {
   line-height: 1;
   font-size: 13px;
   white-space: nowrap;
+
 }
 
 .buy-tickets:hover {
@@ -214,7 +215,7 @@ h6 {
 
 @media (max-width: 992px) {
   .buy-tickets {
-    margin: 0 15px 0 0;
+    margin: 0 0px 0 0;
   }
 }
 
