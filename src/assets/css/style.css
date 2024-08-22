@@ -1111,6 +1111,13 @@ h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
+  top: 90px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 #supporters .supporters-wrap {
